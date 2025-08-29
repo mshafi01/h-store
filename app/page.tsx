@@ -1,18 +1,10 @@
-import Image from "next/image";
+import { HashfiLogo } from "./components/logo";
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center relative h-screen w-screen">
-      <main className="flex-1 flex flex-col text-center justify-center items-center sm:items-start relative z-10 p-4 pb-20 sm:p-20">
-        <Image
-          // className="dark:invert"
-          className="mx-auto"
-          src="/hashfi.svg"
-          alt="Next.js logo"
-          width={160}
-          height={38}
-          priority
-        />
+      <main className="flex-1 flex flex-col text-center justify-center items-center sm:items-start relative z-10 p-4 sm:p-20">
+        <HashfiLogo width={260} height={48} className="mx-auto" />
         <h1 className="mt-10 text-center text-3xl sm:text-4xl font-bold text-gray-800">
           WE ARE COMING SOON!!
         </h1>
